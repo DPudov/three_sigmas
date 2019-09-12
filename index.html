@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Разбор excel</title>
+  </head>
+  <body>
+    <div>
+        <input required type="text" name="begin_up" placeholder="Начало диапазона ВЕРХ"/>
+        <input required type="text" name="end_up" placeholder="Конец диапазона ВЕРХ"/>
+    </div>
+    <div>
+        <input required type="text" name="begin_down" placeholder="Начало диапазона ВНИЗ"/>
+        <input required type="text" name="end_down" placeholder="Конец диапазона ВНИЗ"/>
+    </div>
+    <div>
+        <input required type="file" class="file" placeholder="Файл excel"/>
+    </div>
+
+    <div>
+        <p>С чем сравнивать</p>
+        <input type="text" name="sigmas" value="3.38"/>
+    </div>
+    <div>
+        <button>
+            Посчитать
+        </button>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
